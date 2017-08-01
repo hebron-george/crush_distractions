@@ -44,7 +44,7 @@ class App extends Component {
   render() {
     let page = null;
     console.log("Going to access hasRegisteredin App.render()");
-    if (false || !this.state.hasRegistered) {
+    if (!this.state.hasRegistered) {
       page = <RegisterPage onSubmit={this.handleRegistration}/>;
     } else {
       if (!this.state.hasStartedTask) {
